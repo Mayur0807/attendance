@@ -1,0 +1,15 @@
+<div>
+
+	<a href="{{ doc.route }}">{{ doc.get_title() or doc.name }}</a>
+
+	<div class="card" style="width: 22rem;">
+		<img src="{{doc.vehicle_image}}" class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">{{doc.get_title()}}</h5>
+		  <a href="{{doc.route}}">View Vechile</a>
+
+		</div>
+	  </div>
+	   
+</div>
+

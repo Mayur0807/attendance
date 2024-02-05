@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-12-11 19:45:19.282234",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "s_name",
+  "a_date",
+  "w_total",
+  "w_present",
+  "w_absent",
+  "wa_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "s_name",
+   "fieldtype": "Link",
+   "label": "Site Name",
+   "options": "Site Master"
+  },
+  {
+   "fieldname": "a_date",
+   "fieldtype": "Date",
+   "label": "Attendence Date"
+  },
+  {
+   "fieldname": "wa_table",
+   "fieldtype": "Table",
+   "label": "Attendance Details",
+   "options": "Worker Attendance"
+  },
+  {
+   "fieldname": "w_total",
+   "fieldtype": "Int",
+   "label": "Total Worker"
+  },
+  {
+   "fieldname": "w_present",
+   "fieldtype": "Int",
+   "label": "Present Worker"
+  },
+  {
+   "fieldname": "w_absent",
+   "fieldtype": "Int",
+   "label": "Absent Worker"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-10 21:50:48.661724",
+ "modified_by": "Administrator",
+ "module": "Mayur",
+ "name": "Site Attendence",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "a_date"
+}

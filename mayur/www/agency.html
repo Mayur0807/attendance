@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=YourCustomFont&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .custom-article {
+            background-color: #dee6b0f5;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h5>Car Booking Agency</h5>
+    </div>
+
+    {% for v in vehicles %}
+        <article class="custom-article">
+            <img src="{{ v.vehicle_image }}" class="custom-image" style="width: 200px;" >
+            {{ v.make }} {{ v.model }}
+        </article>
+    {% endfor %}
+
+</body>
+</html>
+
+
+

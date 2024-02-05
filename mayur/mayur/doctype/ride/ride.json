@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-11 22:27:34.588489",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_of_ride",
+  "vehicle",
+  "driver",
+  "rate_per_hour",
+  "total_hours",
+  "total_ammount",
+  "column_break_vfnpv",
+  "cost_breakup",
+  "column_break_tzt5p",
+  "amended_from",
+  "is_published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "driver",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "cost_breakup",
+   "fieldtype": "Table",
+   "label": "Cost Breakup",
+   "options": "Ride Cost"
+  },
+  {
+   "fieldname": "rate_per_hour",
+   "fieldtype": "Int",
+   "label": "Rate Per Hour"
+  },
+  {
+   "fieldname": "total_ammount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Ammount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vfnpv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tzt5p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_of_ride",
+   "fieldtype": "Date",
+   "label": "Date Of Ride "
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published "
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "reqd": 1
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-16 21:55:51.461333",
+ "modified_by": "Administrator",
+ "module": "Mayur",
+ "name": "Ride",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "vehicles",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "date_of_ride"
+}
